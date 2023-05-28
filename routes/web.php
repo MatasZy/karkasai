@@ -32,3 +32,4 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/advertisements/create', [AdvertisementController::class, 'create'])->name('advertisements.create');
     Route::post('/advertisements', [AdvertisementController::class, 'store'])->name('advertisements.store');
 });
+Route::resource('advertisements', App\Http\Controllers\AdvertisementController::class);

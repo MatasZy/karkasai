@@ -17,9 +17,11 @@ class CreateAdvertisementsTable extends Migration
             $table->id();
             $table->string('title');
             $table->text('description');
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
+
 
     /**
      * Reverse the migrations.
@@ -31,4 +33,3 @@ class CreateAdvertisementsTable extends Migration
         Schema::dropIfExists('advertisements');
     }
 }
-
