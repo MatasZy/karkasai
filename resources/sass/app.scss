@@ -1,49 +1,61 @@
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
 // Variables
 @import 'variables';
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
 
+/* Nustatome pagrindinį foną ir šriftą */
 
-.card {
-    background-color: #f2f2f2;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: Arial, sans-serif;
 }
 
-.card-header {
-    background-color: #333;
-    color: #fff;
-    border-radius: 10px 10px 0 0;
-    padding: 10px 20px;
+/* Antraštės stilius */
+
+h1, h2, h3 {
+    color: #333;
 }
 
-.card-body {
-    padding: 20px;
+h1 {
+    font-size: 24px;
 }
 
-.btn-primary {
-    background-color: #333;
-    border-color: #333;
+h2 {
+    font-size: 20px;
 }
 
-.btn-primary:hover {
-    background-color: #555;
-    border-color: #555;
+h3 {
+    font-size: 18px;
 }
 
-.col-form-label {
-    font-weight: bold;
+
+
+/* Mėlynos ir raudonos elementų spalvos */
+
+.blue {
+    color: #00f;
 }
 
-.invalid-feedback {
-    color: #dc3545;
-    display: block;
-    margin-top: 5px;
+.red {
+    color: #f00;
 }
+
+/* Nuorodų stiliai */
+
+a {
+    color: #00f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 
 
